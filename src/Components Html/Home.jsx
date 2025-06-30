@@ -1,4 +1,5 @@
 import React from "react";
+import "../Components Css/Home.css";
 import { Helmet } from "react-helmet-async";
 import videoSrc from "../assets/home.mp4";
 import img1 from "../assets/Images/model-1.jpg";
@@ -6,8 +7,6 @@ import img2 from "../assets/Images/model-2.jpg";
 import img3 from "../assets/Images/model-3.jpg";
 import img4 from "../assets/Images/model-4.jpg";
 import img5 from "../assets/Images/model-5.jpg";
-// import img6 from "../assets/Images/model-6.jpg";
-// import img7 from "../assets/Images/model-7.jpg";
 
 
 export default function Home() {
@@ -88,48 +87,7 @@ export default function Home() {
           <div className="gallery-item">
             <img src={img5} alt="Gallery Image 5" />
           </div>
-          {/* <div className="gallery-item">
-            <img src={img6} alt="Gallery Image 6" />
-          </div>
-          <div className="gallery-item">
-            <img src={img7} alt="Gallery Image 7" />
-          </div> */}
-          {/* <div className="gallery-item">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 8" />
-          </div>
-          <div className="gallery-item">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 9" />
-          </div>
-          <div className="gallery-item">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 10" />
-          </div>
-          <div className="gallery-item">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 11" />
-          </div>
-          <div className="gallery-item">
-            <img src="https://via.placeholder.com/300" alt="Gallery Image 12" />
-          </div> */}
         </div>
-      </div>
-
-
-      {/* COntact */}
-
-      <div className="home-contact">
-        <h2>Contact Us</h2>
-        <p>
-          For inquiries, bookings, or more information, please reach out to us:
-        </p>
-        <ul>
-          <li>
-            Email: vvroyalbeauty7@gmail.com
-            <a href="mailto:vvroyalbeauty7@gmail.com"></a>
-          </li>
-          <li>
-            Phone: <a href="tel:+919944444444">+ee91 99444 44444</a>
-          </li>
-          <li>Address: Komarapalayam, Tamil Nadu, India</li>
-        </ul>
       </div>
     </div>
   );
