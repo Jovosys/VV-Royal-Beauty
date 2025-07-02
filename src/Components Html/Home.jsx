@@ -12,65 +12,64 @@ import styled from "styled-components";
 
 export default function Home() {
   const StyledWrapper = styled.div`
-    .book {
-      position: relative;
-      border-radius: 10px;
-      width: 200px;
-      height: 280px;
-      background-color: whitesmoke;
-      -webkit-transform: preserve-3d;
-      -ms-transform: preserve-3d;
-      transform: preserve-3d;
-      -webkit-perspective: 2000px;
-      perspective: 2000px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      color: #000;
+    .flip-card {
+      background-color: transparent;
+      width: 190px;
+      height: 304px;
+      perspective: 1000px;
+      font-family: sans-serif;
     }
 
-    .cover {
-      top: 0;
-      position: absolute;
-      background-color: lightgray;
+    .title {
+      font-size: 1.5em;
+      font-weight: 900;
+      text-align: center;
+      margin: 0;
+    }
+
+    .flip-card-inner {
+      position: relative;
       width: 100%;
       height: 100%;
-      border-radius: 10px;
-      cursor: pointer;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-transform-origin: 0;
-      -ms-transform-origin: 0;
-      transform-origin: 0;
-      -webkit-box-shadow: 1px 1px 12px #000;
-      display: -webkit-box;
-      display: -ms-flexbox;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+      position: absolute;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
+      flex-direction: column;
       justify-content: center;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border: 1px solid coral;
+      border-radius: 1rem;
     }
 
-    .book:hover .cover {
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-transform: rotatey(-80deg);
-      -ms-transform: rotatey(-80deg);
-      transform: rotatey(-80deg);
+    .flip-card-front {
+      
+      color: coral;
     }
 
-    p {
-      font-size: 20px;
-      font-weight: bolder;
+    .flip-card-back {
+      background: linear-gradient(
+        120deg,
+        rgb(87, 31, 10) 30%,
+        coral 88%,
+        bisque 40%,
+        rgb(255, 185, 160) 78%
+      );
+      color: white;
+      transform: rotateY(180deg);
     }
   `;
 
@@ -109,30 +108,7 @@ export default function Home() {
         <div className="home-content">
           <div className="home-content-p">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusamus, harum vitae? Eius impedit voluptate facere aut ut
-              voluptatem laboriosam consequatur. Beatae nostrum fugiat
-              perferendis vero veniam recusandae? Dicta animi nostrum laborum
-              harum minus. Aspernatur, in! Ipsa eveniet porro repellat officiis.
-              Distinctio, dolore minima illum non nobis nam voluptas alias
-              inventore sit repellat fugiat numquam, at quia consequatur quos
-              nisi est. Perspiciatis voluptas perferendis quae optio obcaecati
-              ratione rem autem maiores ea dolor aperiam enim, nobis, at
-              nesciunt ab quia deleniti recusandae voluptatem? Ut doloremque ea
-              porro quod at corporis deleniti repellendus! Fuga exercitationem,
-              laborum consectetur id eaque esse odio soluta minus accusantium
-              impedit quod unde aliquid libero praesentium. Quod repudiandae hic
-              doloremque nihil officia cupiditate beatae, modi voluptatibus
-              assumenda ratione vel animi amet, cum culpa voluptates libero
-              debitis suscipit ipsa obcaecati dolore. Eveniet molestiae, odio,
-              beatae, molestias eius voluptate perferendis nisi necessitatibus
-              tempore aperiam quasi doloremque placeat? Id assumenda, quidem,
-              accusantium aliquam et itaque sed beatae illum dolore pariatur
-              rerum vero illo repudiandae distinctio voluptatibus, tenetur
-              reiciendis labore. Eligendi, culpa cupiditate. Nemo voluptates
-              aut, vel repudiandae repellat officiis voluptate. Omnis doloremque
-              labore modi amet quos quidem maxime vitae fuga quae sapiente
-              neque, odio voluptates vero fugit at, debitis delectus in!
+              VV Royal Beauty is the ultimate deXXstination for women looking for the best bridal makeup in Komarapalayam & Tamil Nadu. Our bridal makeup experts are experts at making each bride look royal and radiant. As a leading ladies salon in Komarapalayam, we offer facial treatments, hair styling, and skincare services. We also run a tailoring and boutique for women, providing custom-made designs and ethnic collections. VV Royal Beauty is more than just a beauty parlor in Komarapalayam—it's a hub for Aari work classes, Zumba dance, fitness yoga, Bharatanatyam coaching, and smart career training. We're proud to be a women's empowerment center in Tamil Nadu, dedicated to helping women shine in every aspect of life. Discover beauty, confidence, and creativity—all under one roof.
             </p>
           </div>
           <div className="home-content-img">
@@ -147,46 +123,76 @@ export default function Home() {
           <h2 className="services-head">Our Services</h2>
           <div className="cards-home">
             <StyledWrapper>
-              <div className="book">
-                <img src={img1} alt="" />
-                <div className="cover">
-                  <p>Bridal MakeUp</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <p className="title"><img src={img1} alt="" /></p>
+                    <p>Hover Me</p>
+                  </div>
+                  <div className="flip-card-back">
+                    <p className="title">BACK</p>
+                    <p>Leave Me</p>
+                  </div>
                 </div>
               </div>
             </StyledWrapper>
 
             <StyledWrapper>
-              <div className="book">
-                <img src={img2} alt="" />
-                <div className="cover">
-                  <p>Aari Work</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <p className="title"><img src={img2} alt="" /></p>
+                    <p>Hover Me</p>
+                  </div>
+                  <div className="flip-card-back">
+                    <p className="title-p">BACK</p>
+                    <p>Leave Me</p>
+                  </div>
                 </div>
               </div>
             </StyledWrapper>
 
             <StyledWrapper>
-              <div className="book">
-                <img src={img3} alt="" />
-                <div className="cover">
-                  <p>Bharathanatiyam</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <p className="title">FLIP CARD</p>
+                    <p>Hover Me</p>
+                  </div>
+                  <div className="flip-card-back">
+                    <p className="title">BACK</p>
+                    <p>Leave Me</p>
+                  </div>
                 </div>
               </div>
             </StyledWrapper>
 
             <StyledWrapper>
-              <div className="book">
-                <img src={img4} alt="" />
-                <div className="cover">
-                  <p>Boutique</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <p className="title">FLIP CARD</p>
+                    <p>Hover Me</p>
+                  </div>
+                  <div className="flip-card-back">
+                    <p className="title">BACK</p>
+                    <p>Leave Me</p>
+                  </div>
                 </div>
               </div>
             </StyledWrapper>
 
             <StyledWrapper>
-              <div className="book">
-                <img src={img5} alt="" />
-                <div className="cover">
-                  <p>Zumba dance</p>
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <p className="title">FLIP CARD</p>
+                    <p>Hover Me</p>
+                  </div>
+                  <div className="flip-card-back">
+                    <p className="title">BACK</p>
+                    <p>Leave Me</p>
+                  </div>
                 </div>
               </div>
             </StyledWrapper>
@@ -217,9 +223,8 @@ export default function Home() {
         </div>
       </div>
 
-
       {/*  */}
-      
+
       <div className="workplace-para">
         <h2 className="workplace-head">Our Workplace</h2>
         {/* <img src={} alt="" /> */}
@@ -242,42 +247,28 @@ export default function Home() {
           visit us and discover the perfect blend of tradition and modern beauty
           techniques.
         </p>
-
       </div>
 
+      {/*  */}
 
-    
-
-
-
-
-
-    {/*  */}
-
-
-
-       <div class="context">
+      <div class="context">
         <h1>Pure Css Animated Background</h1>
-    </div>
+      </div>
 
-
-<div class="area" >
-            <ul class="circles">
-              
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-            
-    </div >
-
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
   );
 }
