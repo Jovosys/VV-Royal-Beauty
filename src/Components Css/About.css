@@ -1,0 +1,222 @@
+/* section 1 */
+/* about bgimage */
+.about-background{
+  background-image: url('../assets/About/aboutBgimage1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+/* content in h1 */
+.about-content {
+  max-width: 100%;
+  background: #aa0144;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+/* laptop */
+@media (max-width: 1024px) {
+  .about-background {
+    height: 80vh;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  .about-background {
+    height: 60vh;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 24px;
+  }
+
+}
+/* mobile */
+@media (max-width: 480px) {
+  .about-background {
+    height: 50vh;
+  }
+
+  .about-content h1 {
+    font-size: 20px;
+  }
+
+}
+/* owner section 2 */
+
+.about-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background: #fffafc;
+  align-items: center;
+  justify-content: center;
+}
+.section2-heading{
+  text-align: center;
+  padding: 10px;
+}
+.owner-section {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+.owner-name,.shop-name{
+    font-family: "Cinzel", serif;
+}
+.owner-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #e0c6d0;
+}
+
+.company-section {
+  flex: 2;
+  min-width: 300px;
+}
+.company-section h2 {
+  font-size: 32px;
+  color: #b40060;
+}
+
+.tagline {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-section h2 {
+    font-size: 24px;
+  }
+
+  .owner-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/*section 3 vision and mission */
+.vision-mission-section {
+  background-image: url('/images/bridal-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: #fffafc;
+  position: relative;
+}
+
+.overlay {
+  background-color: #aa0144;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vision, .mission {
+  flex: 1 1 45%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.vision h5, .mission h5 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  text-align: center;
+}
+
+.vision p, .mission p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .vision, .mission {
+    flex: 1 1 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+/* our work section 4 */
+.service-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+/* section 5  */
+.section5-heading{
+  text-align: center;
+}
+
+.lead {
+  color: #555;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black !important;
+}
