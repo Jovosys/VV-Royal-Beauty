@@ -12,17 +12,19 @@ export default function Navbars() {
         <Navbar.Brand href="#home">
           <img className="images-logo" src={logo} alt="" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" id="but" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" id="nav-text">
             <Nav.Link href="#home" className="nav-text">Home</Nav.Link>
             <Nav.Link href="#link" className="nav-text">About</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.1">Bridal Makeup</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.2">Fashion Boutique</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.3">Aari Work</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.3">Tailoring</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.3">Fitness & Yoga</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.3">Bharatanatyam Classes</NavDropdown.Item>
+              <NavDropdown.Item className="drop-down" href="#action/3.3">Smart Career Coaching</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#link" className="nav-text">Gallery</Nav.Link>
             <Nav.Link href="#link" className="nav-text">Blog</Nav.Link>

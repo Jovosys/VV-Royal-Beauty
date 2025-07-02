@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 .footer {
-    background-color: #f8f9fa;
+    background-color: #aa0144 !important;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
-    color: #6c757d;
+    color: #ffffff;
+}
+.footer-links li a{
+    color: #fbfbff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 .footer-content {
     max-width: 1200px;
