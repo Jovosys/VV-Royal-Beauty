@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ownerImage from "../assets/About/owner.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "../Components Css/About.css";
+import '../Components Css/About.css'
 import BridalMakeUp from '../assets/About/BridalMakeUp.png'
 import AariWork from '../assets/About/aariwork.jpg'
 import Tailoring from '../assets/About/Tailoring.jpg'
