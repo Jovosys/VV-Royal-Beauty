@@ -12,13 +12,7 @@ function App(){
     <SmoothScroll>
       <Home/>
 <<<<<<< HEAD
-      <About/>
-=======
-      
-    // {/* </SmoothScroll> */}
-      
->>>>>>> 0f3e9251950da30a958e15d1927559eda9937e32
-      <Footer/>
+      <><About /><Footer /></>
     </>
   )
 }
