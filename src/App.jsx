@@ -1,4 +1,5 @@
 import './App.css'
+import About from './Components Html/About'
 import Footer from './Components Html/Footer'
 import Home from './Components Html/Home'
 import Navbars from './Components Html/Navbars'
@@ -10,11 +11,11 @@ function App() {
     <>
     <Navbars/>
     
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      
-    </Routes>
-    
+    {/* <Routes> */}
+      {/* <Route path="/" element={<Home/>} /> */}
+      <Home/>
+    {/* </Routes> */}
+    {/* <About/> */}
       <Footer/>
     </>
   )
