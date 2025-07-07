@@ -3,22 +3,19 @@ import About from './Components Html/About'
 import Footer from './Components Html/Footer'
 import Home from './Components Html/Home'
 import Navbars from './Components Html/Navbars'
-import SmoothScroll from './Components Html/SmoothScroll'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
     <Navbars/>
-    {/* <SmoothScroll> */}
+    
+    {/* <Routes> */}
+      {/* <Route path="/" element={<Home/>} /> */}
       <Home/>
-<<<<<<< HEAD
-      <About/>
-=======
-      
-    {/* </SmoothScroll> */}
-      
->>>>>>> 0f3e9251950da30a958e15d1927559eda9937e32
+    {/* </Routes> */}
+    {/* <About/> */}
       <Footer/>
     </>
   )
