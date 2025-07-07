@@ -25,18 +25,33 @@
 
 .home-about{
     text-align: center !important;
-    margin-top: 40px;
+    margin-top: 100px;
+    height: 800px !important;
+    
 }
 .home-h1{
     font-family: Cinzel;
     font-size: 4.5rem;
     font-weight: 600;
     color:  #aa0144 !important;
+    /* margin-top: 20px; */
+}
+.home-content-p{
+    /* background-color: #8f94fb; */
+    /* border: 1px solid #464444; */
+    box-shadow: 0 0 6px 2px gray;
+    border-radius: 10px;
+    padding: 20px;
+
 }
 .home-content-img img{
     width: 300px !important;
     height: 440px !important;
     border-radius: 20px;
+    background-color: #aa0144;
+}
+.home-content{
+    margin-top: 50px;
 }
 .home-content-img{
    width: 550px !important;
@@ -48,12 +63,14 @@
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+
 }
 .services-home{
-    width: 96%;
-    height: 460px;
+    width: 90%;
+    height: 660px;
     border-radius: 20px;
     background-color: #aa0144!important;
+
 }
 .services-head{
     text-align: center;
@@ -99,6 +116,13 @@
     align-items: center;
     gap: 20px;
 }
+.title img{
+    width: 180px !important;
+    height: 249px !important;
+    border-radius: 20px;
+}
+
+
 
 /* ............................. */
 
@@ -238,8 +262,10 @@
     
     .home-content{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;        
         padding: 20px;
     }
 

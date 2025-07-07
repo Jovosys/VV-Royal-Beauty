@@ -1,17 +1,24 @@
-import './App.css';
-import About from './Components Html/About';
-import Footer from './Components Html/Footer';
-import Navbars from './Components Html/Navbars';
-import Home from './Components Html/Home';
-
+import './App.css'
+import About from './Components Html/About'
+import Footer from './Components Html/Footer'
+import Home from './Components Html/Home'
+import Navbars from './Components Html/Navbars'
+import SmoothScroll from './Components Html/SmoothScroll'
 
 function App(){
   return(
     <>
-      <Navbars/>
-       <About/>
-       <Home/>
-       <Footer/>
+    <Navbars/>
+    <SmoothScroll>
+      <Home/>
+<<<<<<< HEAD
+      <About/>
+=======
+      
+    // {/* </SmoothScroll> */}
+      
+>>>>>>> 0f3e9251950da30a958e15d1927559eda9937e32
+      <Footer/>
     </>
   )
 }
