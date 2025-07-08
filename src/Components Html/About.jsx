@@ -35,7 +35,7 @@ export default function About() {
                 {/* about-section 1 */}
                 {/* part 1 */}
                 <div className="about-section1">
-                    <h1 className="about-content text-white">Bridal Makeup</h1>
+                    {/* <h1 className="about-content text-white">Bridal Makeup</h1> */}
                     <div className="about-background"></div>
                 </div>
                 {/* about - section 1 end */}

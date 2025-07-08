@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
   text-align: center;
 }
 /* content in h1 */
-.about-content {
+/* .about-content {
   max-width: 100%;
   background: #aa0144;
   padding: 10px;
@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* Responsive Styles */
 /* laptop */

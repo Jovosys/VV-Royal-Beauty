@@ -16,7 +16,7 @@ export default function Navbars() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" id="nav-text">
             <Nav.Link href="/" className="nav-text">Home</Nav.Link>
-            <Nav.Link href="#" className="nav-text">About</Nav.Link>
+            <Nav.Link href="/about" className="nav-text">About</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item className="drop-down" href="#action/3.1">Bridal Makeup</NavDropdown.Item>
               <NavDropdown.Item className="drop-down" href="#action/3.2">Fashion Boutique</NavDropdown.Item>
