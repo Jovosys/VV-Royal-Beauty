@@ -14,7 +14,7 @@ import Bharatanatyam from './Components Html/Bharatanatyam'
 function App() {
 
   return (
-    <div>
+    <>
     <Navbars/>
     
     <Routes>
@@ -26,9 +26,10 @@ function App() {
       <Route path='tailoring' element={<Tailoring/>}  />
       <Route path="fitnessyoga" element={<FitnessYoga/>} />
       <Route path='bharatanatyam' element={<Bharatanatyam/>} />
-    <Routes/>
+      
+    </Routes>
       <Footer/>
-    <div/>
+    </>
   )
 }
  
