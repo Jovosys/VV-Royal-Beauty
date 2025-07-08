@@ -14,10 +14,18 @@ function App() {
     
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Home/>
+      <Route path="/about" element={<About/>} />
+      {/*dropdown  */}
+      <Route path="/bridal" element={<Bridal/>} />
+      {/* <Route path="/fashion" element={<Fashion/>} /> */}
+      {/* <Route path="/aari" element={<Aari/>} /> */}
+      {/* <Route path="/tailoring" element={<Tailoring/>} /> */}
+      {/* <Route path="/fitness" element={<Fitness/>} /> */}
+      {/* <Route path="/bharatanatyam" element={<Bharatanatyam/>} /> */}
+      {/* <Route path="/coaching" element={<Coaching/>} /> */}
     </Routes>
-    <About/>
-    <Bridal/>
+    {/* <About/>
+    <Bridal/> */}
       <Footer/>
     </>
   )
