@@ -12,6 +12,7 @@ import FitnessYoga from './Components Html/FitnessYoga'
 import Bharatanatyam from './Components Html/Bharatanatyam'
 import Contact from './Components Html/Contact'
 import Blog from './Components Html/Blog'
+import Gallery from './Components Html/Gallery'
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
       <Route path='tailoring' element={<Tailoring/>}  />
       <Route path="fitnessyoga" element={<FitnessYoga/>} />
       <Route path='bharatanatyam' element={<Bharatanatyam/>} />
-      <Route path="gallery" element={}
+      <Route path="gallery" element={<Gallery/>} />
       <Route path="blog" element={<Blog/>} />
       <Route path='contact' element={<Contact/>} />
     </Routes>

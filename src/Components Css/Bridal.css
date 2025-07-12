@@ -1,0 +1,282 @@
+*{
+  scroll-behavior: smooth;
+}
+/* Fullscreen hero background */
+ /* carsoul */
+ .hero-carousel-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .carousel-caption {
+    bottom: 15%;
+  }
+}
+
+/* about */
+
+.bridalmodel-about:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(250, 2, 2, 0.974);
+  transform: scale(1.02);
+  transition: 0.5s ease-in-out;
+
+}
+
+/* experience */
+.experience-section {
+  background: #f6f5f1;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d63384;
+  position: relative;
+}
+
+.experience-card {
+  perspective: 1000px;
+  height: 300px;
+}
+
+.experience-card:hover{
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.experience-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgb(163, 233, 22);
+  overflow: hidden;
+  height: 100%;
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-front h5 {
+  margin-top: 10px;
+  color: #c2185b;
+  font-weight: 600;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: #e86a96;
+  color: #f3e4e4;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* Makeup services */
+
+.services-section {
+  background: #fff0f5;
+}
+
+.section-title {
+  color: #d63384;
+  font-weight: 600;
+  position: relative;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f32307;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  font-size: 3rem;
+  color: #e91e63;
+  background: #fdeff5;
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* portfolio */
+.portfolio-section {
+  background: #fff8f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c2185b;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(199, 21, 133, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* our team */
+.Team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(222, 52, 52, 0.576);
+  transition: transform 0.3s ease;
+}
+
+.Team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.Team-card:hover img {
+  transform: scale(1.1);
+}
+
+/* client reviews */
+
+.review-section {
+  background-image: url('../assets/Bridal/Review-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #060606;
+  font-weight: bold;
+}
+
+.review-card {
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.client-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #ea2107;
+  padding: 5px;
+}
+
+.review-text {
+  font-style: italic;
+  color: #1342ee;
+  font-size: 1.4rem;
+}
+
+.client-name {
+  color: #060606;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
