@@ -1,0 +1,242 @@
+/* Hero Section Styles */
+.Bhara-hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../assets/Bharathanatayam/B-bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Main hero content container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Headings */
+.hero-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+/* Colored subheading span */
+.span-text {
+  color: #ff4081;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Responsive typography */
+@media (min-width: 576px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .span-text {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .span-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-heading {
+    font-size: 3.5rem;
+  }
+
+  .span-text {
+    font-size: 2rem;
+  }
+}
+/* why learn section */
+.why-learn-section {
+  background-color: #fff3f7;
+}
+
+.why-learn-section img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 450px;
+}
+
+@media (max-width: 768px) {
+  .why-learn-section p {
+    font-size: 0.95rem;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+/* bharatanatyam classes section */
+.bharatanatyam-classes {
+  background-color: #fce4ec;
+}
+
+.class-card {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.class-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  z-index: 1;
+}
+
+.class-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+}
+
+.class-title {
+  color: #c2185b;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.class-desc {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Hover Effects */
+.class-card:hover .class-image {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: scale(1.2);
+}
+
+.class-card:hover .class-content {
+  background-color: transparent;
+}
+
+.class-card:hover .class-title,
+.class-card:hover .class-desc {
+  color: #fff;
+}
+
+/* Responsive Height */
+@media (max-width: 768px) {
+  .class-card {
+    height: 450px;
+  }
+  .class-title {
+    font-size: 1.1rem;
+  }
+
+  .class-desc {
+    font-size: 0.95rem;
+  }
+}
+/* meet our instructor section */
+.instructor-section {
+  background-color: #fff3f7;
+}
+
+.instructor-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.instructor-card:hover {
+  transform: scale(1.03);
+}
+
+.instructor-card img {
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid #c2185b;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #c2185b;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .instructor-card img {
+    height: 220px;
+  }
+}
+/* review section */
+.review-section {
+  background-color: #fff8f9;
+}
+
+.review-card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  padding: 1rem;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #444;
+  min-height: 100px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #c2185b;
+  border-radius: 50%;
+  padding: 10px;
+}

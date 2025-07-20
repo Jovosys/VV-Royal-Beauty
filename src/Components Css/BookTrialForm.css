@@ -1,0 +1,13 @@
+.appointment-form {
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  z-index: 1002;
+  position: relative;
+}
+.submitbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

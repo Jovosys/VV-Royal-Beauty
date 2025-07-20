@@ -396,6 +396,7 @@ const cardRefs = useRef([]);
         </Swiper>
       </div>
     </section>
+    {/* review section */}
     </div>
   );
 }
