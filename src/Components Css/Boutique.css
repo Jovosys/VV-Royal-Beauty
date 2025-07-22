@@ -1,6 +1,6 @@
-.hero-section {
+.B-hero-section {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   background: url('../assets/Bridal/Review-bg.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to right, rgba(179, 172, 172, 0.7), rgba(228, 222, 222, 0.2));
   z-index: 1;
   animation: fadeOverlay 2s ease-in-out;
 }
@@ -32,7 +32,7 @@
   }
 }
 .lead{
-  color:rgb(255, 225, 0)
+  color:brown;
 }
 /* catalog section */
 .catalog-card {

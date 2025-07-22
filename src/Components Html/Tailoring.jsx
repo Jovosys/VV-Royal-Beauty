@@ -66,7 +66,7 @@ const Tailoring = () => {
             Tailoring Service for{" "} <br/>
             <span className="span-text-tailoring">Men, Women & Kids</span>
           </h1>
-          <button className="btn btn-warning mt-4" onClick={bookForm}>
+          <button className="btn btn-warning mt-4 fw-bold" onClick={bookForm}>
             Book Appointment
           </button>
         </div>
@@ -80,7 +80,7 @@ const Tailoring = () => {
       {/* about section */}
       <section className="about-section py-3">
         <div className="container">
-          <h2 className="text-center mb-5" data-aos="fade-down">
+          <h2 className="text-center mb-5 fw-bold" data-aos="fade-down">
             About Us
           </h2>
           <div className="row align-items-center">
@@ -111,8 +111,8 @@ const Tailoring = () => {
 
             {/* What We Serve */}
             <div className="col-lg-4 mb-4" data-aos="fade-left">
-              <div className="services-list bg-light p-3 rounded shadow-sm">
-                <h3>What We Serve</h3>
+              <div className="services-list bg-light text-start p-3 rounded shadow-sm">
+                <h3 className="text-center">What We Serve</h3>
                 <ul className="list-unstyled mt-3">
                   <li>✔ Custom Tailoring for Men, Women & Kids</li>
                   <li>✔ Express Stitching & Delivery</li>
@@ -129,7 +129,7 @@ const Tailoring = () => {
       {/* services section */}
       <section className="services-section py-5" id="services">
         <div className="container">
-          <h2 className="text-center mb-5" data-aos="fade-up">
+          <h2 className="text-center mb-5 fw-bold" data-aos="fade-up">
             Our Services
           </h2>
           <div className="row justify-content-center">
@@ -167,7 +167,7 @@ const Tailoring = () => {
               className="col-12 col-md-8 col-lg-6 text-dark overlay-content"
               data-aos="fade-right"
             >
-              <h2 className="mb-3">Men's Tailoring</h2>
+              <h2 className="mb-3 fw-bold">Men's Tailoring</h2>
               <p>
                 Experience premium men's tailoring with a touch of elegance. Our
                 services include custom shirt stitching, trouser fitting, suit
@@ -187,7 +187,7 @@ const Tailoring = () => {
           </div>
           {/* book btn */}
           <div className="text-center mt-4">
-            <button className="btn btn-warning" onClick={mensForm}>
+            <button className="btn btn-warning fw-bold" onClick={mensForm}>
               Request a Callback
             </button>
           </div>
@@ -210,7 +210,7 @@ const Tailoring = () => {
               className="col-12 col-md-8 col-lg-6 text-dark overlay-content"
               data-aos="fade-right"
             >
-              <h2 className="mb-3">Women's Tailoring</h2>
+              <h2 className="mb-3 fw-bold ">Women's Tailoring</h2>
               <p>
                 Experience premium men's tailoring with a touch of elegance. Our
                 services include custom shirt stitching, trouser fitting, suit
@@ -230,7 +230,7 @@ const Tailoring = () => {
           </div>
           {/* book btn */}
           <div className="text-center mt-4">
-            <button className="btn btn-warning" onClick={womensForm}>
+            <button className="btn btn-warning fw-bold" onClick={womensForm}>
               Request a Callback
             </button>
           </div>

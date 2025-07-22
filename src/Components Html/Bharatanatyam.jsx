@@ -145,8 +145,8 @@ export default function Bharatanatyam() {
         <div className="overlay" />
         <div className="container-fluid h-100 d-flex justify-content-center align-items-center">
           <div className="hero-content text-center text-light px-3">
-            <h1 className="hero-heading" data-aos="fade-down">
-              LEARN BHARATHANATYAM
+            <h1 className="hero-heading text-uppercase " data-aos="fade-down">
+              Learn Bharathanatayam
               <br />
               <span className="span-text">Live and Online Classes</span>
             </h1>
@@ -181,7 +181,7 @@ export default function Bharatanatyam() {
 
           {/* Right Content */}
           <div className="col-md-6" data-aos="fade-left">
-            <h2 className="mb-3 text-danger fw-bold">Why Learn Bharatanatyam?</h2>
+            <h2 className="mb-3 text-dark fw-bold">Why Learn Bharatanatyam?</h2>
             <p className="text-secondary fs-6 lh-lg text-justify">
               Bharatanatyam is one of the oldest and most celebrated classical dance forms in India,
               rich in tradition, spiritual depth, and artistic excellence. Learning Bharatanatyam is
@@ -204,7 +204,7 @@ export default function Bharatanatyam() {
     {/* bharatanatyam classes section */}
     <section className="bharatanatyam-classes py-5">
       <div className="container">
-        <h2 className="text-center mb-5 text-danger fw-bold" data-aos="fade-up">Bharatanatyam Classes</h2>
+        <h2 className="text-center mb-5 text-dark fw-bold" data-aos="fade-up">Bharatanatyam Classes</h2>
         <div className="row">
           {classData.map((cls, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={cls.id} data-aos="zoom-in" data-aos-delay={index * 100}>
@@ -224,7 +224,7 @@ export default function Bharatanatyam() {
     {/* meet our instructor section */}
     <section className="instructor-section py-5" id="instructors">
       <div className="container">
-        <h2 className="text-center text-danger fw-bold mb-5" data-aos="fade-up">
+        <h2 className="text-center text-dark fw-bold mb-5" data-aos="fade-up">
           Meet Our Talented Instructors
         </h2>
 
@@ -302,7 +302,7 @@ export default function Bharatanatyam() {
     {/* review section */}
     <section className="review-section py-5" id="reviews">
       <div className="container">
-        <h2 className="text-center text-danger fw-bold mb-5" data-aos="fade-up">
+        <h2 className="text-center text-dark fw-bold mb-5" data-aos="fade-up">
           Our Students Say
         </h2>
 

@@ -1,0 +1,64 @@
+.contact-section {
+  background-color: #fdf6f6;
+}
+
+.contact-title {
+  font-weight: bold;
+  color: #b0005f;
+  position: relative;
+}
+
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #b0005f;
+  margin: 8px auto;
+}
+
+.contact-link {
+  color: #b0005f;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+/* float whatsapp */
+/* Floating WhatsApp Button with Glow */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+  animation: glow 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(208, 34, 238, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(216, 8, 239);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(195, 9, 237, 0.6);
+  }
+}
+

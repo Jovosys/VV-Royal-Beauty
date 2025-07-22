@@ -108,8 +108,6 @@
 .testimonials-section-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #fdb704;
-  font-weight: bold;
 }
 
 .testimonials-card {
@@ -138,10 +136,6 @@
   font-size: 1.3rem;
 }
 /* faq section */
-.aari-faq-section {
-  background-color: #eb69e0;
-}
-
 .accordion-button {
   background-color: #fff;
   font-weight: 600;

@@ -30,7 +30,7 @@ const experiences = [
   },
   {
     title: 'Movie Makeup',
-    image: AariWork,
+    image: BridalModel,
     description: 'Cinematic makeup for film & TV.'
   },
   {
@@ -234,7 +234,7 @@ const cardRefs = useRef([]);
       {/* 2. About Section */}
       <section className="container my-3">
       <div className="intro-top-text text-center mb-3">
-        <h1 className="fw-bold text-danger">Best Bridal Makeup Artist in Erode</h1>
+        <h1 className="fw-bold fs-2 text-dark">Best Bridal Makeup Artist in Erode</h1>
         <div className="available d-flex justify-content-center align-items-center">
         <p className="text-dark w-50 fs-5">
           Available for Bridal Makeup, Wedding Makeup, Movies Makeup, Ad film Makeup, Portfolio Fashion show Makeup,
@@ -251,7 +251,7 @@ const cardRefs = useRef([]);
 
         {/* Right Content */}
         <div className="col-md-8 intro-content mb-5">
-          <h2 className="fw-bold text-uppercase text-info text-center">Make Your Day Memorable</h2>
+          <h2 className="fw-bold text-uppercase text-center">Make Your Day Memorable</h2>
           <div className="about-content">
           <p>
             Find the Best Bridal Makeup Artist in Chennai,Tamilnadu.Choose the Phenomenal 

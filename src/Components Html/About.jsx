@@ -131,7 +131,7 @@ export default function About() {
                 </div>
                 {/* about - section3 end */}
                 {/* about - section 4 */}
-                <div className="py-3 px-1">
+                <div className="py-1 px-5">
                     <div className="ourwork container">
                         <h4 className="text-center mb-5" data-aos="fade-up">Our Works</h4>
                         <div className="row">

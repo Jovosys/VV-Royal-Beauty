@@ -13,8 +13,8 @@ import "swiper/css/pagination";
 import "../Components Css/Boutique.css";
 
 const catalogItems = [
-  { title: "Bridal Wear", image: BridalMakeUp },
-  { title: "Party Wear", image: AariWork },
+  { title: "Bridal Wear", image: Barathanattiyam },
+  { title: "Party Wear", image: Career },
   { title: "Casual Wear", image: Barathanattiyam },
   { title: "Designer Sarees", image: Tailoring },
   { title: "Western Wear", image: Career },
@@ -38,7 +38,7 @@ const Boutique = () => {
   return (
     // hero section
     <div>
-      <section className="hero-section position-relative text-white">
+      <section className="B-hero-section position-relative text-white">
         <div className="hero-overlay"></div>
         <div className="container position-relative">
           <div className="row align-items-center">
@@ -77,7 +77,7 @@ const Boutique = () => {
 
             {/* Right: Content */}
             <div className="col-lg-6" data-aos="fade-left">
-              <h1 className="display-5 fw-bold text-info">Elegant & Stylish</h1>
+              <h1 className="display-5 fw-bold text-dark">Elegant & Stylish</h1>
               <p className="lead mt-3 mb-4">
                 Discover our exclusive fashion collection that defines modern
                 boutique style. Perfect blend of tradition and trend – designed
@@ -90,7 +90,7 @@ const Boutique = () => {
       {/* catalog section */}
       <section className="catalog-section py-5 bg-light" id="catalog">
         <div className="container">
-          <h2 className="text-center mb-5" data-aos="fade-down">
+          <h2 className="text-center mb-5 fw-bold" data-aos="fade-down">
             Explore Our Catalog
           </h2>
           <div className="row">

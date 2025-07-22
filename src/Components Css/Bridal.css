@@ -47,7 +47,9 @@
   box-shadow: 0 0 20px rgba(250, 2, 2, 0.974);
   transform: scale(1.02);
   transition: 0.5s ease-in-out;
-
+}
+.intro-content h2 {
+  color: #c2185b;
 }
 
 /* experience */
@@ -58,7 +60,6 @@
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #d63384;
   position: relative;
 }
 
@@ -127,7 +128,6 @@
 }
 
 .section-title {
-  color: #d63384;
   font-weight: 600;
   position: relative;
 }
@@ -165,7 +165,6 @@
 .section-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #c2185b;
 }
 
 .portfolio-card {
@@ -187,13 +186,13 @@
   transform: scale(1.1);
 }
 
-.overlay {
+.portfolio-card .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(199, 21, 133, 0.6);
+  background: rgba(223, 15, 146, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -142,7 +142,7 @@ const Aari = () => {
     {/* Testimonials */}
     <section className="testimonials-section py-5" id="testimonials">
           <div className="container" data-aos="fade-up">
-            <h6 className="testimonials-section-title text-center mb-5">Testimonials</h6>
+            <h6 className="testimonials-section-title text-center fw-bold text-dark mb-5">Testimonials</h6>
             <Swiper
               modules={[Pagination, Autoplay]}
               spaceBetween={30}
