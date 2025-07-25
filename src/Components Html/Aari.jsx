@@ -72,7 +72,7 @@ const Aari = () => {
           {/* Left: Text Content */}
           <div className="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
             <h5 className="text-uppercase text-warning mb-2">Aari work blouse price Starts From ₹1000</h5>
-            <h1 className="display-5 fw-bold text-info">Best Aari Work Blouse Erode</h1>
+            <h1 className="display-5 fw-bold">Best Aari Work Blouse Erode</h1>
             <h4 className="text-light mb-3">Leading Aari Work Service Provider in Erode</h4>
 
             <p className="text-light">
@@ -109,7 +109,7 @@ const Aari = () => {
             >
               <div className="ourdesign-card">
                 <img src={item.img} alt={item.title} className="img-fluid" />
-                <div className="overlay">
+                <div className="aari-overlay">
                   <div className="overlay-text">{item.title}</div>
                 </div>
               </div>
@@ -119,7 +119,6 @@ const Aari = () => {
       </div>
     </section>
     {/* Trendig aari work */}
-
     <section className="trending-aari-section py-5" id="trending">
       <div className="container">
         <h2 className="text-center fw-bold mb-5 text-dark" data-aos="fade-down">
