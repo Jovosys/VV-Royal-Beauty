@@ -3,40 +3,37 @@
 }
 /* Fullscreen hero background */
  /* carsoul */
- .hero-carousel-section {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+
+ .bridal-hero-section {
+  background: url("../assets/About/aboutBgimage1.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 0 15px;
   position: relative;
+  z-index: 1;
 }
 
-.hero-img {
-  height: 100vh;
-  object-fit: cover;
+.bridal-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for text visibility */
+  z-index: -1;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #fff;
+.hero-section h1,
+.hero-section p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-desc {
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .hero-title {
+@media (max-width: 576px) {
+  .bridal-hero-section h1 {
     font-size: 2rem;
   }
-
-  .hero-desc {
+  .bridal-hero-section p {
     font-size: 1rem;
-  }
-
-  .carousel-caption {
-    bottom: 15%;
   }
 }
 
@@ -138,7 +135,6 @@
   padding: 25px 20px;
   box-shadow: 0 8px 20px rgba(81, 79, 79, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* border: 1px solid #f32307; */
   border: 0;
 
 }

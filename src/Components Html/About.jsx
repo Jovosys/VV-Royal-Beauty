@@ -1,4 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import ownerImage from "../assets/About/owner.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +15,7 @@ import Tailoring from "../assets/About/Tailoring.jpg";
 import Fitness from "../assets/About/Fitness.png";
 import Barathanattiyam from "../assets/About/Barathanattiyam.jpg";
 import Career from "../assets/About/career.jpg";
+import Bharatanatyam from "./Bharatanatyam";
 
 const works = [
   { id: 1, title: "Bridal Makeup", image: BridalMakeUp },
@@ -18,42 +25,68 @@ const works = [
   { id: 5, title: "Barathanattiyam", image: Barathanattiyam },
   { id: 6, title: "Career Coaching", image: Career },
 ];
+//services
 
-// vision mission content
-
-const visionText = `To be the most trusted and sought-after bridal makeup brand,
-enhancing every bride’s natural beauty while creating timeless, unforgettable moments.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, porro quia, rem expedita
-quod rerum voluptatem maiores minima obcaecati doloremque, sed vel illum a optio mollitia
-suscipit repudiandae impedit dolore recusandae nemo? Illum enim error facilis eaque quas,
-neque commodi numquam quasi odit iusto dolore exercitationem magnam aut laudantium inventore?We are committed to providing personalized and luxurious bridal beauty experiences
-through expert artistry, quality products, and heartfelt service. Lorem ipsum dolor sit amet
-consectetur adipisicing elit. Ratione, porro quia, rem expedita quod rerum voluptatem maiores
-minima obcaecati doloremque, sed vel illum a optio mollitia suscipit repudiandae impedit dolore
-recusandae nemo? Illum enim error facilis eaque quas, neque commodi numquam quasi odit iusto
-dolore exercitationem magnam aut laudantium inventore?`;
-
-const missionText = `We are committed to providing personalized and luxurious bridal beauty experiences
-through expert artistry, quality products, and heartfelt service. Lorem ipsum dolor sit amet
-consectetur adipisicing elit. Ratione, porro quia, rem expedita quod rerum voluptatem maiores
-minima obcaecati doloremque, sed vel illum a optio mollitia suscipit repudiandae impedit dolore
-recusandae nemo? Illum enim error facilis eaque quas, neque commodi numquam quasi odit iusto
-dolore exercitationem magnam aut laudantium inventore?We are committed to providing personalized and luxurious bridal beauty experiences
-through expert artistry, quality products, and heartfelt service. Lorem ipsum dolor sit amet
-consectetur adipisicing elit. Ratione, porro quia, rem expedita quod rerum voluptatem maiores
-minima obcaecati doloremque, sed vel illum a optio mollitia suscipit repudiandae impedit dolore
-recusandae nemo? Illum enim error facilis eaque quas, neque commodi numquam quasi odit iusto
-dolore exercitationem magnam aut laudantium inventore?`;
-
-const getShortText = (text) => {
-  return text.split(" ").slice(0, 50).join(" ") + "...";
-};
+const services = [
+  {
+    title: "Bridal Makeup",
+    desc: "Premium bridal makeover package",
+    img: BridalMakeUp,
+  },
+  {
+    title: "Mehndi Design",
+    desc: "Traditional and modern mehndi styles",
+    img: Barathanattiyam,
+  },
+  { title: "Aari Work", desc: "Custom embroidery and handwork", img: AariWork },
+  {
+    title: "Hair Styling",
+    desc: "Trendy hairdos for all occasions",
+    img: Fitness,
+  },
+  {
+    title: "Facial Treatments",
+    desc: "Glow-enhancing facial packs",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Spa Services",
+    desc: "Relaxing body massages and spa",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Tailoring",
+    desc: "Custom-fit bridal dresses",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Nail Art",
+    desc: "Creative nail design options",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Fitness Training",
+    desc: "Pre-wedding fitness packages",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Jewellery Rental",
+    desc: "Traditional and modern sets",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Photo Shoot",
+    desc: "Bridal and pre-wedding shoots",
+    img: "https://via.placeholder.com/300x200",
+  },
+  {
+    title: "Saree Draping",
+    desc: "Perfect draping for every bride",
+    img: "https://via.placeholder.com/300x200",
+  },
+];
 
 export default function About() {
-  //vision mission
-  const [showFullVision, setShowFullVision] = useState(false);
-  const [showFullMission, setShowFullMission] = useState(false);
-
   useEffect(() => {
     AOS.init({ duration: 1200 });
   }, []);
@@ -127,43 +160,88 @@ export default function About() {
           </div>
         </div>
         {/* about - section 2 end */}
-        {/* about-section 3 */}
-        <div className="vision-mission-section">
-          <h3 className="title" data-aos="fade-up">
-            Our Vision & Mission
-          </h3>
+        {/* about-section 3 vision mission */}
+        <section className="vision-mission-section py-5">
+          <div className="container">
+            <div className="row align-items-center">
+              {/* Left Content */}
+              <div
+                className="col-lg-6 col-md-12 mb-4 mb-lg-0"
+                data-aos="fade-right"
+              >
+                <div className="content-box">
+                  <h2 className="section-title mb-4 d-flex flex-column align-items-center">
+                    Our Vision
+                  </h2>
+                  <p className="section-text">
+                    To be the most trusted bridal beauty brand, empowering every
+                    bride with confidence, elegance, and timeless charm.
+                  </p>
 
-          <div className="about-overlay">
-            <div className="content-container">
-              {/* Vision Box */}
-              <div className="vision" data-aos="fade-right">
-                <h5>🎯 Vision</h5>
-                <p>{showFullVision ? visionText : getShortText(visionText)}</p>
-                <button
-                  className="btn btn-outline-warning btn-sm mt-2"
-                  onClick={() => setShowFullVision(!showFullVision)}
-                >
-                  {showFullVision ? "Read Less" : "Read More"}
-                </button>
+                  <h2 className="section-title mt-5 mb-4 d-flex flex-column align-items-center">
+                    Our Mission
+                  </h2>
+                  <p className="section-text">
+                    We strive to deliver exceptional bridal services with
+                    creativity and personalized attention, ensuring
+                    unforgettable wedding moments through beauty and care.
+                  </p>
+                </div>
               </div>
 
-              {/* Mission Box */}
-              <div className="mission" data-aos="fade-left">
-                <h5>🎗️ Mission</h5>
-                <p>
-                  {showFullMission ? missionText : getShortText(missionText)}
-                </p>
-                <button
-                  className="btn btn-outline-warning btn-sm mt-2"
-                  onClick={() => setShowFullMission(!showFullMission)}
+              {/* Right Carousel */}
+              <div className="col-lg-6 col-md-12" data-aos="fade-left">
+                <div
+                  id="visionMissionCarousel"
+                  className="about-carousel slide carousel-fade"
+                  data-bs-ride="carousel" 
                 >
-                  {showFullMission ? "Read Less" : "Read More"}
-                </button>
+                  <div className="carousel-inner rounded shadow">
+                    <div className="carousel-item active">
+                      <img
+                        src={Barathanattiyam}
+                        className="d-block w-100"
+                        alt="Slide 1"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={BridalMakeUp}
+                        className="d-block w-100"
+                        alt="Slide 2"
+                      />
+                    </div>
+                    <div className="carousel-item">
+                      <img
+                        src={Tailoring}
+                        className="d-block w-100"
+                        alt="Slide 3"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Optional: Carousel Controls */}
+                  <button
+                    className="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#visionMissionCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <span className="carousel-control-prev-icon"></span>
+                  </button>
+                  <button
+                    className="carousel-control-next"
+                    type="button"
+                    data-bs-target="#visionMissionCarousel"
+                    data-bs-slide="next"
+                  >
+                    <span className="carousel-control-next-icon"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
+        </section>
         {/* about - section3 end */}
         {/* about - section 4 */}
         <div className="py-1 px-5">
@@ -197,85 +275,41 @@ export default function About() {
         {/* about section 4 end */}
         {/* about section 5 */}
         <section className="container py-5">
-          <div className="section5-title">
-            <h3 className="section5-heading mb-5">Our Services</h3>
-          </div>
-          {/* Bridal Makeup Section */}
-          <div className="row align-items-center justify-content-center gy-4 mb-5">
-            {/* Image */}
-            <div className="col-lg-4 col-md-6 d-flex align-items-center justify-content-center " data-aos="fade-right">
-              <img
-                src={BridalMakeUp}
-                alt="Bridal Makeup"
-                className="img-fluid rounded shadow w-75 "
-              />
-            </div>
-
-            {/* Text */}
-            <div className="col-lg-6 col-md-10" data-aos="fade-left">
-              <h6 className="text-danger mb-3 fs-2">Bridal Perfection</h6>
-              <p className="lead">
-                Experience flawless bridal makeup that enhances your natural
-                beauty and complements your wedding look.
-              </p>
-              <ul className="list-unstyled">
-                <li>
-                  <strong>📍 Location:</strong> Erode, Tamil Nadu
-                </li>
-                <li>
-                  <strong>💄 Services:</strong> HD Bridal Makeup, Hair Styling,
-                  Saree Draping
-                </li>
-                <li>
-                  <strong>🎉 Events:</strong> Wedding, Engagement, Reception
-                </li>
-                <li>
-                  <strong>⭐ Experience:</strong> 5+ Years
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Aari Work Section */}
-          <div className="row align-items-center justify-content-center gy-4">
-            {/* Text */}
-            <div
-              className="col-lg-6 col-md-10 order-2 order-lg-1"
-              data-aos="fade-right"
+          {/* our services */}
+          <div className="container my-5">
+            <h2 className="text-center fw-bold mb-4">Our Services</h2>
+            <Swiper
+              modules={[Pagination, Navigation, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={4}
+              pagination={{ clickable: true }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                992: { slidesPerView: 4 },
+              }}
             >
-              <h6 className="text-danger mb-3 fs-2">Aari Work</h6>
-              <p className="lead">
-                Discover elegant embroidery that brings your bridal outfit to
-                life with Aari Work perfection.
-              </p>
-              <ul className="list-unstyled">
-                <li>
-                  <strong>📍 Location:</strong> Coimbatore, Tamil Nadu
-                </li>
-                <li>
-                  <strong>💄 Services:</strong> Aari Works, Hair Styling, Saree
-                  Draping
-                </li>
-                <li>
-                  <strong>🎉 Events:</strong> Wedding, Engagement, Reception
-                </li>
-                <li>
-                  <strong>⭐ Experience:</strong> 3+ Years
-                </li>
-              </ul>
-            </div>
-
-            {/* Image */}
-            <div
-              className="col-lg-4 col-md-6 order-1 order-lg-2 d-flex align-items-center justify-content-center"
-              data-aos="fade-left"
-            >
-              <img
-                src={AariWork}
-                alt="Aari Work"
-                className="img-fluid rounded shadow w-75 "
-              />
-            </div>
+              {services.map((service, index) => (
+                <SwiperSlide key={index}>
+                  <div className="card h-100 shadow-sm">
+                    <img
+                      src={service.img}
+                      className="card-img-top"
+                      alt={service.title}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{service.title}</h5>
+                      <p className="card-text">{service.desc}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </section>
         {/* about section 5 end */}

@@ -191,9 +191,9 @@
 }
 
 .instructor-card img {
-  height: 400px;
+  height: 300px;
   object-fit: cover;
-  border-bottom: 3px solid #c2185b;
+  border: 3px solid #c2185b;
 }
 
 .card-title {
@@ -214,29 +214,49 @@
   }
 }
 /* review section */
-.review-section {
-  background-color: #fff8f9;
+ .feedback-section {
+  background-image: url('../assets/Bridal/Review-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  z-index: 1;
 }
 
-.review-card {
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-  padding: 1rem;
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #060606;
+  font-weight: bold;
 }
 
-.review-card:hover {
-  transform: translateY(-5px);
+.feedback-card {
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.review-text {
-  font-size: 0.95rem;
-  color: #444;
-  min-height: 100px;
+.client-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #ea2107;
+  padding: 5px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #c2185b;
-  border-radius: 50%;
-  padding: 10px;
+.feedback-text {
+  font-style: italic;
+  color: #1342ee;
+  font-size: 1.4rem;
+}
+
+.client-name {
+  color: #060606;
+  font-weight: 600;
+  font-size: 1.3rem;
 }

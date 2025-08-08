@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
 }
 /* hero section */
-.hero-section {
+.Tailoring-hero-section {
   position: relative;
   height: 100vh;
   background-image: url('../assets/Tailoring/T-home-bg.avif');
@@ -24,7 +24,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(8, 8, 8, 0.6);
   z-index: 1;
 }
 
@@ -57,34 +57,48 @@ body {
     align-items: center;
 }
 /* about section */
-.about-section {
-  background-color: #f9f9f9;
+.about-us-section {
+  background-color: #fffaf2;
 }
 
-@media (max-width: 600px) {
-  .about-section {
-    display: block;
-    text-align: center;
-  }
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+}
+
+.about-content {
+  padding: 0 10px;
 }
 
 .about-text {
-  background-color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
   color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
-.services-list h5 {
-  font-weight: bold;
-  color: #1a1a1a;
+.carousel img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.services-list ul li {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: #444;
+@media (max-width: 768px) {
+  .carousel img {
+    height: 220px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
 }
+/* about section end */
 /* services section */
 .service-card {
   width: 100%;
@@ -104,12 +118,16 @@ body {
 
 /* mens tailoring */
 .mens-tailoring-section {
-  background-image: url('../assets//Tailoring/T-services1.avif');
+  background-image: url('../assets//Tailoring/mens.jpg');
   background-size: cover;
   background-position: center;
   min-height: 80vh;
   position: relative;
   padding: 60px 20px;
+}
+
+.mens-heading{
+  color: white;
 }
 
 .overlay-content {
@@ -126,9 +144,10 @@ body {
 }
 /* women's tailoring */
 .womens-tailoring-section {
-  background-image: url('../assets//Tailoring/T-services3.avif');
+  background-image: url('../assets//Tailoring/women1.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat:no-repeat;
   min-height: 80vh;
   position: relative;
   padding: 60px 20px;

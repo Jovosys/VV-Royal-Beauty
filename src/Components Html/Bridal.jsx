@@ -9,9 +9,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Carousel from 'react-bootstrap/Carousel';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import BridalModel from '../assets/Bridal/Bridal Model1.jpg'
+import BridalModel from '../assets/Bridal/bridal-model1.jpg'
 import AariWork from '../assets/About/aariwork.jpg'
 import Barathanattiyam from '../assets/About/Barathanattiyam.jpg'
 gsap.registerPlugin(ScrollTrigger);
@@ -204,31 +203,16 @@ const cardRefs = useRef([]);
   return (
     <div className="App">
       {/* 1. Hero Section */}
-      <section className="hero-carousel-section">
-      <Carousel fade indicators={false} controls={true} interval={3000}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 hero-img"
-            src={BridalModel}
-            alt="First slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="d-block w-100 hero-img"
-            src={Barathanattiyam}
-            alt="Second slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 hero-img"
-            src={AariWork}
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
+      <section className="bridal-hero-section d-flex align-items-center text-white">
+      <div className="container text-center" data-aos="fade-up">
+        <h1 className="display-4 fw-bold">Bridal Elegance Redefined</h1>
+        <p className="lead">
+          Make your special day unforgettable with our expert bridal services.
+        </p>
+        <a href="#services" className="btn btn-light mt-3">
+          Explore Services
+        </a>
+      </div>
     </section>
 
       {/* 2. About Section */}

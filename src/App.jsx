@@ -14,6 +14,7 @@ import Contact from './Components Html/Contact'
 import Blog from './Components Html/Blog'
 import Gallery from './Components Html/Gallery'
 
+
 function App() {
 
   return (
@@ -26,7 +27,7 @@ function App() {
       <Route path="/bridal" element={<Bridal/>}/>
       <Route path='/boutique' element={<Boutique/>} />
       <Route path="aari" element={<Aari/>} />
-      <Route path='tailoring' element={<Tailoring/>}  />
+      <Route path='tailoring' element={<Tailoring/>}/>
       <Route path="fitnessyoga" element={<FitnessYoga/>} />
       <Route path='bharatanatyam' element={<Bharatanatyam/>} />
       <Route path="gallery" element={<Gallery/>} />

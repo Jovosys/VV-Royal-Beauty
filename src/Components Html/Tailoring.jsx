@@ -19,22 +19,22 @@ const services = [
 
 // why choose us
 const points = [
-    {
-      iconClass: "bi bi-check-circle-fill text-success",
-      title: "Premium Stitching",
-      desc: "We deliver high-quality stitching tailored to your measurements with perfect fit."
-    },
-    {
-      iconClass: "bi bi-cash-coin text-primary",
-      title: "Affordable Price",
-      desc: "Get stylish and quality tailoring at reasonable rates without any compromise."
-    },
-    {
-      iconClass: "bi bi-alarm-fill text-warning",
-      title: "Timely Delivery",
-      desc: "We value your time and always ensure prompt delivery of every order."
-    }
-  ];
+  {
+    iconClass: "bi bi-check-circle-fill text-success",
+    title: "Premium Stitching",
+    desc: "We deliver high-quality stitching tailored to your measurements with perfect fit.",
+  },
+  {
+    iconClass: "bi bi-cash-coin text-primary",
+    title: "Affordable Price",
+    desc: "Get stylish and quality tailoring at reasonable rates without any compromise.",
+  },
+  {
+    iconClass: "bi bi-alarm-fill text-warning",
+    title: "Timely Delivery",
+    desc: "We value your time and always ensure prompt delivery of every order.",
+  },
+];
 
 const Tailoring = () => {
   const [showForm, setShowForm] = useState(false);
@@ -58,12 +58,12 @@ const Tailoring = () => {
   return (
     <div className="about">
       {/* hero section */}
-      <section className="hero-section">
+      <section className="Tailoring-hero-section">
         <div className="overlay" />
 
         <div className="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
           <h1 className="hero-heading text-light" data-aos="fade-down">
-            Tailoring Service for{" "} <br/>
+            Tailoring Service for <br />
             <span className="span-text-tailoring">Men, Women & Kids</span>
           </h1>
           <button className="btn btn-warning mt-4 fw-bold" onClick={bookForm}>
@@ -78,54 +78,105 @@ const Tailoring = () => {
         )}
       </section>
       {/* about section */}
-      <section className="about-section py-3">
+      <section className="about-us-section py-5">
         <div className="container">
-          <h2 className="text-center mb-5 fw-bold" data-aos="fade-down">
-            About Us
-          </h2>
+          {/* Section Heading */}
+          <div className="row mb-5">
+            <div className="col text-center">
+              <h2 className="section-heading" data-aos="fade-down">
+                About Us
+              </h2>
+            </div>
+          </div>
+
           <div className="row align-items-center">
-            {/* About Content */}
-            <div className="col-lg-4 mb-4" data-aos="fade-right">
-              <div className="about-text p-3 shadow-sm rounded bg-white">
-                <p>
-                  We provide professional tailoring services for men, women, and
-                  children, with a focus on custom fits, timely delivery, and
-                  style that matches your personality. Our experienced tailors
-                  work with quality fabrics and pay attention to every detail to
-                  ensure customer satisfaction.
-                  <br />
-                  <br />
-                  From daily wear to occasion wear, we ensure each garment is
-                  made with love and precision. Our goal is to offer fashion
-                  that fits you perfectly and makes you feel confident.
+            {/* Left Content */}
+            <div
+              className="col-lg-6 col-md-12 mb-4 mb-lg-0"
+              data-aos="fade-right"
+            >
+              <div className="about-content">
+                <p className="about-text">
+                  At our tailoring studio, we blend tradition and modern trends
+                  to create beautifully crafted outfits that reflect your unique
+                  personality. With decades of experience in fashion design, our
+                  team is dedicated to delivering premium quality stitching,
+                  customized fittings, and the finest finishing touches. Whether
+                  it’s bridal wear, casuals, or professional attire, our
+                  meticulous attention to detail ensures every outfit fits you
+                  perfectly.
+                </p>
+                <p className="about-text">
+                  We pride ourselves on our client-first approach, offering
+                  consultations, fabric recommendations, and quick delivery
+                  options to meet your schedule. Our goal is to provide not just
+                  garments, but confidence and elegance that elevate your style.
+                  Let us stitch your story with precision, creativity, and care.
                 </p>
               </div>
             </div>
 
-            {/* Image Card */}
-            <div className="col-lg-4 mb-4" data-aos="zoom-in">
-              <div className="card shadow border-0">
-                <img src={aboutImg} className="card-img-top" alt="About" />
-              </div>
-            </div>
+            {/* Right Carousel */}
+            <div className="col-lg-6 col-md-12" data-aos="fade-left">
+              <div
+                id="tailoringCarousel"
+                className="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div className="carousel-inner rounded shadow">
+                  <div className="carousel-item active">
+                    <img
+                      src={services1}
+                      className="d-block w-100"
+                      alt="Slide 1"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={services2}
+                      className="d-block w-100"
+                      alt="Slide 2"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={services3}
+                      className="d-block w-100"
+                      alt="Slide 3"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src={aboutImg}
+                      className="d-block w-100"
+                      alt="Slide 4"
+                    />
+                  </div>
+                </div>
 
-            {/* What We Serve */}
-            <div className="col-lg-4 mb-4" data-aos="fade-left">
-              <div className="services-list bg-light text-start p-3 rounded shadow-sm">
-                <h3 className="text-center">What We Serve</h3>
-                <ul className="list-unstyled mt-3">
-                  <li>✔ Custom Tailoring for Men, Women & Kids</li>
-                  <li>✔ Express Stitching & Delivery</li>
-                  <li>✔ Alterations & Fittings</li>
-                  <li>✔ Wedding & Event Wear</li>
-                  <li>✔ High-Quality Fabric Suggestions</li>
-                  <li>✔ Free Consultation</li>
-                </ul>
+                {/* Carousel Controls (optional) */}
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#tailoringCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span className="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#tailoringCarousel"
+                  data-bs-slide="next"
+                >
+                  <span className="carousel-control-next-icon"></span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* about us end */}
       {/* services section */}
       <section className="services-section py-5" id="services">
         <div className="container">
@@ -162,12 +213,14 @@ const Tailoring = () => {
         id="mens-tailoring"
       >
         <div className="container">
+          <h2 className="text-center mens-heading mb-5 fw-bold" data-aos="fade-up">
+            Men's Tailoring
+          </h2>
           <div className="row justify-content-start">
             <div
-              className="col-12 col-md-8 col-lg-6 text-dark overlay-content"
+              className="col-12 col-md-8 col-lg-6 text-light overlay-content"
               data-aos="fade-right"
             >
-              <h2 className="mb-3 fw-bold">Men's Tailoring</h2>
               <p>
                 Experience premium men's tailoring with a touch of elegance. Our
                 services include custom shirt stitching, trouser fitting, suit
@@ -205,12 +258,14 @@ const Tailoring = () => {
         id="womens-tailoring"
       >
         <div className="container">
+          <h2 className="text-center text-dark mb-5 fw-bold" data-aos="fade-up">
+            Women's Tailoring
+          </h2>
           <div className="row justify-content-start">
             <div
               className="col-12 col-md-8 col-lg-6 text-dark overlay-content"
               data-aos="fade-right"
             >
-              <h2 className="mb-3 fw-bold ">Women's Tailoring</h2>
               <p>
                 Experience premium men's tailoring with a touch of elegance. Our
                 services include custom shirt stitching, trouser fitting, suit
@@ -243,24 +298,29 @@ const Tailoring = () => {
         </div>
       </section>
       {/* why choose us */}
-      
-      <section className="why-choose-us py-5 bg-light" id="why-choose-us">
-      <div className="container" data-aos="fade-up">
-        <h3 className="text-center fw-bold mb-5">Why Choose Us</h3>
-        <div className="row">
-          {points.map((item, idx) => (
-            <div className="col-md-4 mb-4 d-flex align-items-stretch" key={idx}>
-              <div className="card p-4 text-center shadow-sm w-100" data-aos="zoom-in">
-                <i className={`${item.iconClass} fs-1 mb-3`}></i>
-                <h5 className="fw-bold">{item.title}</h5>
-                <p className="text-muted">{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
 
+      <section className="why-choose-us py-5 bg-light" id="why-choose-us">
+        <div className="container" data-aos="fade-up">
+          <h3 className="text-center fw-bold mb-5">Why Choose Us</h3>
+          <div className="row">
+            {points.map((item, idx) => (
+              <div
+                className="col-md-4 mb-4 d-flex align-items-stretch"
+                key={idx}
+              >
+                <div
+                  className="card p-4 text-center shadow-sm w-100"
+                  data-aos="zoom-in"
+                >
+                  <i className={`${item.iconClass} fs-1 mb-3`}></i>
+                  <h5 className="fw-bold">{item.title}</h5>
+                  <p className="text-muted">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
