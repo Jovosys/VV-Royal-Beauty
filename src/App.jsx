@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom'
 import Tailoring from './Components Html/Tailoring'
 import FitnessYoga from './Components Html/FitnessYoga'
 import Bharatanatyam from './Components Html/Bharatanatyam'
+import Menucard from './Components Html/Menucard'
 import Contact from './Components Html/Contact'
 import Blog from './Components Html/Blog'
 import Gallery from './Components Html/Gallery'
@@ -30,6 +31,7 @@ function App() {
       <Route path='tailoring' element={<Tailoring/>}/>
       <Route path="fitnessyoga" element={<FitnessYoga/>} />
       <Route path='bharatanatyam' element={<Bharatanatyam/>} />
+      <Route path='menucard' element={<Menucard/>} />
       <Route path="gallery" element={<Gallery/>} />
       <Route path="blog" element={<Blog/>} />
       <Route path='contact' element={<Contact/>} />

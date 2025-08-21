@@ -26,6 +26,7 @@ export default function Navbars() {
               <NavDropdown.Item className="drop-down" href="/bharatanatyam">Bharatanatyam Classes</NavDropdown.Item>
               <NavDropdown.Item className="drop-down" href="/coaching">Smart Career Coaching</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/menucard" className="nav-text">Menucard</Nav.Link>
             <Nav.Link href="/gallery" className="nav-text">Gallery</Nav.Link>
             <Nav.Link href="/blog" className="nav-text">Blog</Nav.Link>
             <Nav.Link href="/contact" className="nav-text">Contact</Nav.Link>

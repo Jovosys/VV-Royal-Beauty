@@ -1,0 +1,32 @@
+.menu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #e75480; /* bridal pink */
+}
+
+.modal-content {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.list-group-item {
+  border: none;
+  font-size: 0.95rem;
+}
+
+form input,
+form select {
+  border-radius: 10px;
+  padding: 10px;
+}
